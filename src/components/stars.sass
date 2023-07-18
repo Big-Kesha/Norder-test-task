@@ -1,0 +1,45 @@
+.Stars
+  input
+    width: 30px
+    display: none
+    color: blue
+    padding: 0 2px
+
+  input:checked ~ label
+    background-image: url("../img/star-filled.svg")
+
+  input ~ label:hover,
+  input ~ label:hover ~ label
+    background-image: url("../img/star-filled.svg")
+    background-repeat: no-repeat
+    background-position: center
+    transform: scale(1.2)
+    margin-right: 3px
+    transition: 200ms
+
+
+  label
+    display: block
+    cursor: pointer
+    width: 30px
+    height: 30px
+    background-image: url('../img/star-hollow.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center
+    position: relative
+
+  //label:hover
+  //  background-image: linear-gradient(rgba(229, 150, 49, 0.5), rgba(229, 220, 49, 0.5))
+  //  background-repeat: no-repeat
+  //  background-color: #FFED16
+  //  transition: 200ms
+
+.Stars
+  display: flex
+  flex-direction: row-reverse
+  justify-content: center
+  margin: 0 auto
+
+
+
